@@ -15,13 +15,11 @@ import lombok.RequiredArgsConstructor;
 @Entity
 @RequiredArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
-public class Person {
-
+public class TmcCategory {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@NonNull
 	private String name;
-	@NonNull
-	private String surname;	
 }
